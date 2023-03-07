@@ -3,18 +3,17 @@ import styled from "styled-components";
 export const Card = styled.div`
   width: 200px;
   height: 300px;
-  background-color: #f5f5f6;
+  background-color: #f6f6f6;
   display: flex;
+  justify-content: flex-end;
+    flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  position: relative;
-  box-shadow: 0px 10px 15px 15px rgba(0,0,0,0.1);
   border-radius: 12px;
+  box-shadow: 0px 0px 9px 15px rgba(0,0,0,0.1);
 
   & img{
     object-fit: contain;
-    width: 90px;
+    width: 100px;
 
   }
 `
@@ -25,8 +24,8 @@ export const Stats = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
   height: 70px;
-  background-color: rgb(229 230 237);
-  border: 1px solid #212121;
+  background-color:#a6a6a6;
+  border: 1px solid #9a9a9a;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 
@@ -39,16 +38,28 @@ export const Stats = styled.ul`
       align-items: center;
     justify-content: center;
   flex-direction: column;
+  position: relative;
   
-
+  &:not(:last-child):before{
+      content: '';
+      width: 1px; 
+      height: 100%;
+      background-color: #9a9a9a;
+      position: absolute;
+      right: 0; /* Position the line on the right side */
+    }
   }
 
-
-
-  }
+  
 `
 export const Description = styled.div`
+
   & p{
-    font-size: 12px
+    font-size: 12px;
+    text-align: center;
   }
+`
+export const UserName = styled.p`
+  fonst-size: 14px;
+  font-weight: 900;
 `

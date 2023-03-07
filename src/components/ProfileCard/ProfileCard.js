@@ -1,4 +1,4 @@
-import { Card, Stats, Description } from './ProfileCard.styled';
+import { Card, Stats, Description, UserName } from './ProfileCard.styled';
 
 // import css from 'ProfileCard';
 export default function ProfileCard({
@@ -16,17 +16,16 @@ export default function ProfileCard({
         <img
           src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
           alt="User avatar"
-          className="avatar"
         />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
+        <UserName>{username}</UserName>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </Description>
 
-      <Stats className="stats">
+      <Stats>
         <li>
-          <span className="label">followers</span>
-          <span className="quantity">{followers}</span>
+          <span>followers</span>
+          <span>{followers}</span>
         </li>
         <li>
           <span className="label">views</span>

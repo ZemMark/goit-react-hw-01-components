@@ -1,5 +1,6 @@
 import ProfileCard from './ProfileCard/ProfileCard'
 import userData from '../data/user.json'
+import PropTypes from 'prop-types'
 export const App = () => {
   return (
     <div
@@ -15,7 +16,7 @@ export const App = () => {
       <ProfileCard
         username={ userData.username}
         tag={ userData.tag}
-        label={ userData.label}
+        location={ userData.location}
         likes={ userData.stats.likes}
         followers={ userData.stats.followers}
         views={ userData.stats.views}
@@ -24,3 +25,12 @@ export const App = () => {
   );
   // 
 };
+
+ProfileCard.propTypes = {
+  username: PropTypes.string.isRequired,
+        tag: PropTypes.string.isRequired,
+        location: PropTypes.string.isRequired,
+        likes: PropTypes.number.isRequired,
+        followers: PropTypes.number.isRequired,
+        views: PropTypes.number.isRequired,
+}
