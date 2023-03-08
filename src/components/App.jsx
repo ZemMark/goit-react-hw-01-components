@@ -10,7 +10,6 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -30,7 +29,7 @@ export const App = () => {
         views={ userData.stats.views}
         />
       </div>
-      <div>
+      <div style={{textAlign: 'center'}}>
 
       <Statistics data={statsData}>
         
