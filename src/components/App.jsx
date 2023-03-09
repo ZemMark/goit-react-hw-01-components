@@ -21,7 +21,9 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      <div>
+      <div style={{
+        margin: '50px 0',
+}}>
 
       <ProfileCard
         username={ userData.username}
@@ -32,7 +34,7 @@ export const App = () => {
         views={ userData.stats.views}
         />
       </div>
-      <div style={{textAlign: 'center'}}>
+      <div style={{textAlign: 'center', width: '100%',}}>
 
       <Statistics data={statsData}>
         

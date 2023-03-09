@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 export const StatsSection = styled.section`
   height: 260px;
-  width: 450px;
+  width: 100%;
   margin: 70px auto;
   border: 1px solid violet;
 

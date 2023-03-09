@@ -53,6 +53,7 @@ export const Stats = styled.ul`
   
 `
 export const Description = styled.div`
+      padding: 35px;
 
   & p{
     font-size: 12px;
