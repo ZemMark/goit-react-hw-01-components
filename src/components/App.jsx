@@ -1,12 +1,13 @@
 import ProfileCard from './ProfileCard/ProfileCard'
 import userData from '../data/user.json'
 import statsData from '../data/data.json'
+import friends from '../data/friends.json'
 // import statisticData from '../data/data.json'
 import PropTypes from 'prop-types'
 import Statistics from './Statistics/Statistics'
+import FriendList from './FriendsList/FriendsList'
 
 export const App = () => {
-  console.log(statsData);
   return (
     <div
       style={{
@@ -33,7 +34,11 @@ export const App = () => {
 
       <Statistics data={statsData}>
         
-      </Statistics>
+        </Statistics>
+        
+      </div>
+      <div>
+        <FriendList friends={friends}></FriendList>
       </div>
       </div>
   );
