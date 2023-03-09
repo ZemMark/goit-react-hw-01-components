@@ -11,6 +11,8 @@ export const Friends = styled.ul`
     background-color: #f1f1f9;
   box-shadow: 0px 0px 9px 15px rgba(0,0,0,0.1);
 
+  position: relative;
+
 
   }
   li+li{
@@ -26,6 +28,10 @@ export const Friends = styled.ul`
 `
 
 export const Indicator = styled.span`
+ position: absolute;
+    top: 30px;
+    left: -30px;
+    box-shadow: 0px 0px 9px 15px rgba(0,0,0,0.1);
     width: 15px;
     height: 15px;
     display: block;
@@ -33,5 +39,4 @@ export const Indicator = styled.span`
         margin-right: 5px;
         margin-left: 5px;
     background-color: ${(props) => props.isOnline ? 'green' : 'red'}
-    // margin-right: 5px;
 `
