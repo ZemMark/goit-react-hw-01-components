@@ -1,6 +1,5 @@
 import { Card, Stats, Description, UserName } from './ProfileCard.styled';
 
-// import css from 'ProfileCard';
 export default function ProfileCard({
   username,
   tag,

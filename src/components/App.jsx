@@ -6,7 +6,6 @@ import userData from '../data/user.json';
 import statsData from '../data/data.json';
 import friends from '../data/friends.json';
 import transactions from '../data/transactions.json';
-// import statisticData from '../data/data.json'
 import PropTypes from 'prop-types';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendsList/FriendsList';
@@ -45,7 +44,6 @@ export const App = () => {
       </TabletContainer>
     </div>
   );
-  //
 };
 
 ProfileCard.propTypes = {
