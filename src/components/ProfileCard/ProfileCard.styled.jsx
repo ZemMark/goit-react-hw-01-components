@@ -64,3 +64,7 @@ export const UserName = styled.p`
   fonst-size: 14px;
   font-weight: 900;
 `
+export const ProfileContainer = styled.div`
+  margin: 50px 0;
+
+`

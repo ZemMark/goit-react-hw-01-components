@@ -37,3 +37,7 @@ export const StatsSection = styled.section`
     }
   }
 `
+
+export const StatsContainer = styled.div`
+  text-align: center; width: 100%;
+`

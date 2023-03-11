@@ -23,3 +23,8 @@ td{
   padding: 8px;
 }
 `
+export const TabletContainer = styled.div`
+  width: 100%;
+  margin: 50px;
+
+`

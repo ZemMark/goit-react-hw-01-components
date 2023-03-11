@@ -1,9 +1,10 @@
 import StatsCard from './StatsCard';
 import { StatsSection } from './Statistics.styled';
-export function Statistics({ data }) {
+import PropTypes from 'prop-types';
+export function Statistics({ data, title }) {
   return (
     <StatsSection>
-      <h2>Upload stats</h2>
+      {title && <h2>{title}</h2>}
 
       <ul>
         {data.map((el, index) => (
@@ -34,5 +35,7 @@ export function Statistics({ data }) {
     </StatsSection>
   );
 }
-
+Statistics.propTypes = {
+  title: PropTypes.string,
+};
 export default Statistics;
